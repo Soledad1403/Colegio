@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesa de Partes Virtual - San Daniel Comboni</title>
+  <link rel="stylesheet" href="Mesa virtual.css" />
+</head>
+<body>
+  <!-- Título flotante -->
+  <div class="titulo-flotante">
+    <h1>Mesa de Partes Virtual</h1>
+  </div>
+
+  <!-- Formulario de la Mesa de Partes Virtual -->
+  <section class="formulario">
+    <div class="contenido">
+      <h2>Bienvenido a la Mesa de Partes Virtual</h2>
+      <p>Realiza tus trámites de manera fácil y rápida.</p>
+
+      <!-- Formulario de solicitudes -->
+      <form id="mesa-partes-form">
+        <div class="campo">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo" />
+        </div>
+
+        <div class="campo">
+          <label for="dni">Número de DNI:</label>
+          <input type="text" id="dni" name="dni" required placeholder="Ingresa tu DNI" />
+        </div>
+
+        <div class="campo">
+          <label for="tramite">Tipo de trámite:</label>
+          <select id="tramite" name="tramite" required>
+            <option value="matricula">Matrícula</option>
+            <option value="certificado">Certificados</option>
+            <option value="otros">Otros trámites</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Detalles del trámite:</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe los detalles de tu trámite"></textarea>
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto">
+    <div class="contenido">
+      <h2>Contacto</h2>
+      <p>Si tienes dudas o necesitas más información, contáctanos a:</p>
+      <ul>
+        <li>Teléfono: 123-456-789</li>
+        <li>Correo: contacto@sdcomboni.edu.pe</li>
+        <li>Dirección: Av. Comboni 123, San Martín de Pangoa, Satipo, Junín, Perú</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="Mesa virtual.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Fondo animado y en movimiento */
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    color: #003366;
+    background: linear-gradient(-45deg, #e6f4ff, #ffffff, #dceeff, #f4faff);
+    background-size: 400% 400%;
+    animation: fondoAnimado 20s ease infinite;
+    line-height: 1.6;
+  }
+  /* Encabezado fijo con degradado */
+.header {
+  background: linear-gradient(90deg, #002b5c, #004080);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+/* Menú de navegación */
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00c3ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+  @keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  /* Encabezado fijo con degradado */
+.header {
+  background: linear-gradient(90deg, #5e9adf, #78b1e9);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+/* Menú de navegación */
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00c3ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+  
+  .niveles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 20px;
+  }
+  
+  /* Tarjetas con estilo moderno e iluminación */
+  .nivel {
+    background: #f7fbff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(19, 15, 15, 0.507),
+                inset 0 2px 6px rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Efecto de iluminación al pasar el mouse */
+  .nivel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 64, 128, 0.3),
+                0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Línea decorativa */
+  .nivel::before {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #3c27fa;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  /* Títulos animados con entrada */
+  .nivel h2 {
+    font-size: 2em;
+    color: #0004ff;
+    margin-top: 30px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 0 1px 3px rgb(0, 0, 0);
+    animation: letraMovimiento 2.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes letraMovimiento {
+    0%   { transform: translateY(0px); letter-spacing: 0.5px; }
+    100% { transform: translateY(-3px); letter-spacing: 1.5px; }
+  }
+  
+  /* Imagen con transición suave */
+  .nivel img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 10px 25px rgba(133, 243, 243, 0.527);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .nivel img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Descripción */
+  .nivel p {
+    font-size: 1em;
+    color: #000000;
+    padding: 0 10px;
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+  

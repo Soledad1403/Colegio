@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Encabezado -->
+  <header class="header">
+    <nav class="nav">
+      <ul>
+         <li><a href="Principal.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Niveles.html">Niveles</a></li>
+        <li><a href="Actividades.html">Actividades</a></li>
+        <li><a href="Mesa Virtual.html">Trámite</a></li>
+        <li><a href="Ubicación.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros - San Daniel Comboni</title>
+  <link rel="stylesheet" href="nosotros.css" />
+  <style>
+    
+    /* Animación flotante */
+    @keyframes flotar {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    .bloque.flotando {
+      animation: flotar 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <!-- Portada -->
+  <section class="portada">
+    <div class="contenido-portada">
+      <div class="textos">
+        <h1>Institución Educativa Pública Parroquial <br> San Daniel Comboni</h1>
+        <p class="frase">“Nuestra fe crece, si Cristo en nosotros permanece”</p>
+      </div>
+      <img class="insignia" src="INSIGNIA.JPG" alt="Insignia San Daniel" />
+    </div>
+  </section>
+
+  <!-- Quiénes Somos -->
+  <section class="quienes-somos">
+    <div class="contenido">
+      <div class="texto">
+        <h2>¿Quiénes Somos?</h2>
+        <p>
+          Somos, la Institución Educativa Pública Parroquial “San Daniel Comboni” de gestión privada por convenio creada el año 2004, por el Padre Gianni Pacher, quien gestiona el Convenio entre El Ministerio de Educación y el Vicariato Apostólico de San Ramón, está ubicada en el distrito de San Martín de Pangoa, provincia Satipo, región Junín.
+          <br><br>
+          En sus inicios se autoriza su funcionamiento como CEGECOM Parroquial “San Daniel” mediante R. D. Nº 0240-DUGEL-S en el año 2004 y el año 2005 se crea la Institución Educativa Parroquial “SAN DANIEL COMBONI” mediante R. D. Nº 0696-2005-DUGEL Satipo.
+          <br><br>
+          Nuestra Institución trabaja para brindar un servicio educativo de calidad a la mayoría de estudiantes de nuestro distrito, con una mística cristiana - Comboniana, humanista, propulsora del desarrollo de valores, con el ideal del Padre Gianni.
+          <br><br>
+          Atendemos a más de 789 estudiantes que en un 90% provienen de la zona urbana y cuyos padres de familia se dedican en su mayoría (80%) al comercio y la agricultura, y un 20% son profesionales (docente, policías, entre otros).
+          <br><br>
+          Nuestros estudiantes en un 100% hablan castellano como lengua materna, pudiendo conocer otras lenguas como quechua o nomashigenga como segunda lengua alterna, pero en muy poco porcentaje. El centro poblado de San Martín de Pangoa está ubicado en el distrito de Pangoa, provincia de Satipo, región Junín, perteneciente al VRAEM y se caracteriza por ser una zona de producción de café, cacao y frutas como naranja, piña, papaya entre otros.
+          <br><br>
+          Entre los problemas sociales más álgidos en nuestra zona están: la comercialización y consumo de sustancias psicoactivas, alcohol, trata de personas, entre otros. En nuestro entorno carecemos de instituciones de educación superior, por lo que la mayoría de la población no presenta un adecuado nivel educativo ni cultural. Más bien impera el machismo y el desinterés por la mejora educativa, existiendo cierto conformismo por optar por una mejor calidad de vida.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="san_daniel_comboni.jpg" alt="Imagen Nosotros" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión, Visión, Valores -->
+  <section class="mision-vision">
+    <div class="bloque">
+      <h3>Misión</h3>
+      <p>Brindar una educación integral, con enfoque humanista y cristiano, que forme estudiantes críticos, creativos y comprometidos con su entorno.</p>
+    </div>
+    <div class="bloque">
+      <h3>Visión</h3>
+      <p>Ser una institución reconocida por su excelencia académica y formación en valores, con egresados que transformen su comunidad.</p>
+    </div>
+    <div class="bloque">
+      <h3>Principios y Valores</h3>
+      <ul>
+        <li>Fe cristiana</li>
+        <li>Solidaridad</li>
+        <li>Respeto</li>
+        <li>Responsabilidad</li>
+        <li>Justicia</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- JavaScript flotante -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const bloques = document.querySelectorAll('.bloque');
+      bloques.forEach(bloque => {
+        bloque.classList.add('flotando');
+      });
+    });
+  </script>
+</body>
+</html>

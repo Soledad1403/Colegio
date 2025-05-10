@@ -1,0 +1,88 @@
+:root {
+    --azul-comboni: #003366;
+    --amarillo-comboni: #07124d;
+    --blanco: #ffffff;
+    --sombra-suave: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f6fa;
+    text-align: center;
+    padding: 20px;
+}
+/* Menú de navegación debajo del título */
+.nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+  position: relative;
+  z-index: 998;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #2a3f54;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.nav li a:hover {
+  background-color: #e0eafc;
+  color: #4a90e2;
+  transform: translateY(-2px);
+}
+
+/* Efecto al hacer clic */
+.nav li a:active {
+  background-color: #c5d9f7;
+  color: #1e5ab6;
+  transform: scale(0.97);
+}
+
+/* Cuadro flotante centrado más abajo */
+.floating-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 40px; /* más separado del borde superior */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9); /* fondo claro institucional */
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: var(--azul-comboni);
+    z-index: 1000;
+    box-shadow: 0 4px 12px var(--sombra-suave);
+    border: 2px solid var(--amarillo-comboni);
+}
+
+/* Contenedor principal con degradado institucional */
+.container {
+    background: linear-gradient(135deg, #003366, #07124d);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    color: var(--blanco);
+    margin-top: 120px; /* más espacio para el cuadro flotante */
+}
+
+p {
+    font-size: 18px;
+}
+
+.map-container {
+    margin-top: 20px;
+}

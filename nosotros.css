@@ -1,0 +1,245 @@
+/* Fuente base y colores institucionales */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f6fa;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+  /* Encabezado fijo con degradado */
+.header {
+  background: linear-gradient(90deg, #78a6da, #78b1e9);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+/* Menú de navegación */
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00c3ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+  
+  .niveles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 20px;
+  }
+  
+/* Encabezado fijo con degradado */
+.header {
+  background: linear-gradient(90deg, #002b5c, #004080);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Colores institucionales */
+:root {
+  --azul-comboni: #003366;
+  --amarillo-comboni: #07124d;
+  --blanco: #ffffff;
+  --sombra-suave: rgba(0, 0, 0, 0.15);
+}
+
+/* Portada */
+.portada {
+  background: linear-gradient(rgba(120, 175, 231, 0.6), #00664799),
+              url('portada.jpg') no-repeat center center / cover;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+.contenido-portada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contenido-portada h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  color: var(--amarillo-comboni);
+  position: relative;
+  z-index: 1;
+}
+
+.contenido-portada h1::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  width: 110%;
+  height: 130%;
+  background-color: rgba(255, 255, 255, 0.12);
+  z-index: -1;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: rotate(-2deg);
+  pointer-events: none;
+}
+
+.frase {
+  font-size: 1.5em;
+  margin-top: 15px;
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.insignia {
+  max-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--blanco);
+  box-shadow: 0 6px 15px rgba(7, 146, 211, 0.4);
+}
+
+/* Sección Quiénes Somos */
+.quienes-somos {
+  background-color: var(--blanco);
+  padding: 80px 20px;
+  box-shadow: inset 0 0 40px rgba(66, 4, 30, 0.05);
+}
+
+.contenido {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.texto h2 {
+  font-size: 2.2em;
+  color: var(--azul-comboni);
+  margin-bottom: 15px;
+  border-left: 6px solid var(--amarillo-comboni);
+  padding-left: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.texto p {
+  font-size: 1.1em;
+  color: #444444;
+}
+
+.imagen {
+  flex: 1;
+  padding: 20px;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px var(--sombra-suave);
+}
+
+/* Sección Misión, Visión, Valores */
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #8dbce6 0%, #b7c9db 100%);
+  gap: 30px;
+}
+
+.bloque {
+  flex: 1 1 300px;
+  background-color: var(--blanco);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 64, 128, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid var(--amarillo-comboni);
+}
+
+.bloque\:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 5, 10, 0.25);
+}
+
+.bloque h3 {
+  color: var(--azul-comboni);
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid var(--amarillo-comboni);
+  padding-bottom: 5px;
+}
+
+.bloque p,
+.bloque ul {
+  font-size: 1.05em;
+  color: #444;
+}
+
+.bloque ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
